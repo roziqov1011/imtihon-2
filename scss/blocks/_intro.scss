@@ -1,0 +1,73 @@
+.intro-section {
+    padding: 1px;
+    background: linear-gradient(to top, #121FCF 0%,
+            #2f3b59bd 0%), url(/img/mototsikl.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.intro__wrap{
+    padding: 153px 0;
+
+}
+.intro__title {
+    max-width: 500px;
+    color: $white;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+}
+
+.intro__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    right: 200px;
+    position: relative;
+}
+
+.intro__inner-text {
+    text-align: justify;
+    max-width: 405px;
+    font-family: Lexend Deca;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: $white;
+    margin: 40px 40px 40px 57px;
+}
+.intro__inner-right{
+    margin-bottom: -90px;
+    width: 447px;
+    height: 138px;
+}
+
+@include breakpoint-down(1000px){
+    .intro__wrap{
+        text-align: center;
+    }
+    .intro__title{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .intro__inner{
+        right: auto;
+    }
+    .intro__inner-text{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .intro__inner-line{
+        display: none;
+    }
+    .intro__inner-right{
+        display: none;
+        // position: absolute;
+        // bottom: -100px;
+        
+    }
+}
