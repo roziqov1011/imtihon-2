@@ -466,6 +466,7 @@ header {
 .nav__item-link {
   text-decoration: none;
   text-transform: capitalize;
+  display: block;
   margin-left: 32px;
 }
 
@@ -476,6 +477,11 @@ header {
 
 .nav__item-link:hover {
   color: #FCB72B;
+  transform: scale(1.2);
+}
+
+.nav__item-link:active {
+  transform: scale(1);
 }
 
 .site-btn {
@@ -491,6 +497,10 @@ header {
 .site-btn:hover {
   background-color: transparent;
   color: #FCB72B;
+}
+
+.site-btn:active {
+  box-shadow: inset 0px 0px 10px 5px #eeb006;
 }
 
 @media only screen and (max-width: 620px) {
@@ -974,6 +984,18 @@ header {
   margin: 5px;
 }
 
+.element__social-img {
+  transition: all 0.5s ease;
+}
+
+.element__social-img:hover {
+  transform: scale(1.1);
+}
+
+.element__social-img:active {
+  transform: scale(1);
+}
+
 @media only screen and (max-width: 850px) {
   .element__wrap {
     text-align: center;
@@ -1043,10 +1065,16 @@ header {
   color: #939CAA;
   margin: 18px;
   transition: all 0.3s ease;
+  display: block;
 }
 
 .footer__item-link:hover {
   color: #FCB72B;
+  transform: scale(1.2);
+}
+
+.footer__item-link:active {
+  transform: scale(1);
 }
 
 .footer__right-list {

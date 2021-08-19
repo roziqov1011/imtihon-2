@@ -30,6 +30,7 @@ header{
 }
 .nav__item-link{
     @include reset-link;
+    display: block;
     margin-left: 32px;
 }
 .nav__item-link{
@@ -37,7 +38,11 @@ header{
     transition: all 0.5s ease;
 }
 .nav__item-link:hover{
-    color: $yellow
+    color: $yellow;
+    transform: scale(1.2);
+}
+.nav__item-link:active{
+    transform: scale(1);
 }
 .site-btn{
     @include site-btn;
@@ -45,6 +50,9 @@ header{
 .site-btn:hover{
    background-color: transparent;
    color: $yellow;
+}
+.site-btn:active{
+    box-shadow: inset 0px 0px 10px 5px rgb(238, 176, 6);
 }
 
 @include breakpoint-down(620px){

@@ -34,9 +34,14 @@
     color: $dim-grey;
     margin: 18px;
     transition: all 0.3s ease;
+    display: block;
 }
 .footer__item-link:hover{
-    color: $yellow
+    color: $yellow;
+    transform: scale(1.2);
+}
+.footer__item-link:active{
+ transform: scale(1);
 }
 
 .footer__right-list{
